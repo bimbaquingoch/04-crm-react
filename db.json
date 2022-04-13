@@ -1,0 +1,60 @@
+{
+  "clientes": [
+    {
+      "nombre": "Zoro",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "zoro@zoro.com",
+      "telefono": "0987654321",
+      "notas": "Siempre se pierde",
+      "id": 1
+    },
+    {
+      "nombre": "chino",
+      "empresa": "los shawarmas",
+      "email": "chino@shawarmas.com",
+      "telefono": "09432112345678",
+      "notas": "pidieron un shawarma",
+      "id": 2
+    },
+    {
+      "nombre": "Sanji",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "sanji@piernanegra.com",
+      "telefono": "09876543456789",
+      "notas": "Cocinero pirata",
+      "id": 3
+    },
+    {
+      "nombre": "Luffy",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "rey@pirata.com",
+      "telefono": "876545678900",
+      "notas": "El futuro rey pirata",
+      "id": 4
+    },
+    {
+      "nombre": "Chopper",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "chopper@tanuki.com",
+      "telefono": "87656789878",
+      "notas": "Doctor de la tripulacion",
+      "id": 5
+    },
+    {
+      "nombre": "Usopp",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "soge@king.com",
+      "telefono": "098765456789",
+      "notas": "Tirador pirata",
+      "id": 6
+    },
+    {
+      "nombre": "Nami",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "nami@neko.com",
+      "telefono": "0987654567890",
+      "notas": "Navegante pirata",
+      "id": 7
+    }
+  ]
+}

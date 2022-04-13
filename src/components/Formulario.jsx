@@ -1,29 +1,16 @@
 import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
+import { handleSubmit, nuevoClienteSchema } from "../helpers/help";
 import { Alerta } from "./Alerta";
 
 export const Formulario = () => {
-   // esquema de los campos
-   // aqui se  validan todos los campos del formulario
-   const nuevoClienteSchema = Yup.object().shape({
-      nombre: Yup.string()
-         .min(3, "El nombre es muy corto")
-         .max(20, "El nombre es muy largo")
-         .required("El nombre del cliente es obligatorio"),
-      empresa: Yup.string().required("El nombre de la empresa es obligatorio"),
-
-      email: Yup.string()
-         .email("El email no es valido")
-         .required("El email es obligatorio"),
-
-      telefono: Yup.number()
-         .positive("Numero no valido")
-         .integer("Numero no valido")
-         .typeError("Numero no valido"),
-   });
-
-   const handleSubmit = (valores) => {
-      console.log(valores);
+   const navigate = useNavigate();
+   const initialState = {
+      nombre: "",
+      empresa: "",
+      email: "",
+      telefono: "",
+      notas: "",
    };
    return (
       <div className='bg-slate-200 mt-10 px-5 py-10 rounded-md shadow-xl w-full md:w-3/4 mx-auto'>
@@ -31,15 +18,11 @@ export const Formulario = () => {
             Agregar cliente
          </h1>
          <Formik
-            initialValues={{
-               nombre: "",
-               empresa: "",
-               email: "",
-               telefono: "",
-               notas: "",
-            }}
-            onSubmit={(values) => {
-               handleSubmit(values);
+            initialValues={initialState}
+            onSubmit={async (values, { resetForm }) => {
+               await handleSubmit(values);
+               navigate("/clientes");
+               resetForm();
             }}
             // el esquema de validacion, donde esta la validacion?
             validationSchema={nuevoClienteSchema}>
