@@ -57,7 +57,7 @@ export const VerCliente = () => {
                      <h5 className='font-bold text-xl mb-2 capitalize text-slate-800 mt-3'>
                         Notas
                      </h5>
-                     <p class='mb-5 text-base text-gray-500 sm:text-lg dark:text-slate-700'>
+                     <p className='mb-5 text-base text-gray-500 sm:text-lg dark:text-slate-700'>
                         {notas}
                      </p>
                   </>

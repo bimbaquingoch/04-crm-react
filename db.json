@@ -1,11 +1,11 @@
 {
   "clientes": [
     {
-      "nombre": "Zoro",
+      "nombre": "Roronoa Zoro",
       "empresa": "MUGIWARA NO ICHIMI",
       "email": "zoro@zoro.com",
       "telefono": "0987654321",
-      "notas": "Siempre se pierde",
+      "notas": "Subcapitan de la banda pirata",
       "id": 1
     },
     {
@@ -55,6 +55,22 @@
       "telefono": "0987654567890",
       "notas": "Navegante pirata",
       "id": 7
+    },
+    {
+      "nombre": "Franky",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "franky@super.com",
+      "telefono": "09876543456789",
+      "notas": "Carpintero de la banda",
+      "id": 8
+    },
+    {
+      "nombre": "Brook",
+      "empresa": "MUGIWARA NO ICHIMI",
+      "email": "brook@yohoo.com",
+      "telefono": "0987656789",
+      "notas": "Músico de la banda",
+      "id": 9
     }
   ]
 }

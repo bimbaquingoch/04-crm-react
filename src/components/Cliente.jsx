@@ -28,6 +28,7 @@ export const Cliente = ({ cliente }) => {
                   Ver
                </button>
                <button
+                  onClick={() => navigate(`/clientes/editar/${id}`)}
                   type='button'
                   className='text-slate-500 border-sky-300 shadow-md text-xl md:mx-2 my-2 px-2 py-1 text-center rounded-md border-2 hover:text-sky-500 hover:border-sky-300 hover:shadow-md hover:shadow-sky-400 focus:text-sky-500 focus:border-sky-300 focus:shadow-md focus:shadow-sky-400 focus:bg-slate-300 w-full'>
                   Editar

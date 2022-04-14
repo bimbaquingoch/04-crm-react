@@ -1,33 +1,5 @@
 import * as Yup from "yup";
 
-export const handleSubmit = async ( valores ) =>
-{
-    try
-    {
-        const url = "http://localhost:4000/clientes";
-        // fetch realiza GET por defecto
-        const respuesta = await fetch( url, {
-            // En este caso le colocamos el metodo
-            method: "POST",
-            // a la URL le mandamos la informacion
-            body: JSON.stringify( valores ),
-            // Configuracion, le indicamos que el contenido
-            // es application/json
-            headers: {
-                "Content-Type": "application/json",
-            },
-        } );
-
-        const resultado = await respuesta.json();
-        console.log( respuesta );
-        console.log( resultado );
-        return resultado;
-    } catch ( error )
-    {
-        console.log( error );
-    }
-};
-
 // esquema de los campos
 // aqui se  validan todos los campos del formulario
 export const nuevoClienteSchema = Yup.object().shape( {
