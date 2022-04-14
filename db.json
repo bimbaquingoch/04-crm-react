@@ -9,14 +9,6 @@
       "id": 1
     },
     {
-      "nombre": "chino",
-      "empresa": "los shawarmas",
-      "email": "chino@shawarmas.com",
-      "telefono": "09432112345678",
-      "notas": "pidieron un shawarma",
-      "id": 2
-    },
-    {
       "nombre": "Sanji",
       "empresa": "MUGIWARA NO ICHIMI",
       "email": "sanji@piernanegra.com",
@@ -31,14 +23,6 @@
       "telefono": "876545678900",
       "notas": "El futuro rey pirata",
       "id": 4
-    },
-    {
-      "nombre": "Chopper",
-      "empresa": "MUGIWARA NO ICHIMI",
-      "email": "chopper@tanuki.com",
-      "telefono": "87656789878",
-      "notas": "Doctor de la tripulacion",
-      "id": 5
     },
     {
       "nombre": "Usopp",

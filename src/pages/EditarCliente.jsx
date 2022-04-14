@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
 import { Formulario } from "../components/Formulario";
 
 export const EditarCliente = () => {
    const [cliente, setCliente] = useState({});
    const [cargando, setCargando] = useState(false);
-   // const { nombre, empresa, telefono, notas, email } = cliente;
    const { id } = useParams();
 
    useEffect(() => {
